@@ -1,4 +1,4 @@
-*{
+* {
   color: #ffffff;
 }
 
@@ -11,7 +11,7 @@ body {
   height: 100%;
 }
 
-.image-container{
+.image-container {
   border-radius: 50%;
   border: 1px solid;
   box-shadow: 0px 0px 6px white;
@@ -24,7 +24,7 @@ body {
 .my-input {
   width: 100%;
   background-color: white;
-  border: 2px solid #E83B6B;
+  border: 2px solid #e83b6b;
   border-radius: 15px;
   color: black;
   overflow: hidden;
@@ -44,17 +44,12 @@ body {
 .my-navbar div a {
   color: white;
   font-weight: 700;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .my-navbar div a:hover {
-  color: #C84F4C;
   text-decoration: none;
-  transition: .3s;
-}
-
-.my-list {
-  list-style: circle;
+  transition: 0.3s;
 }
 
 .my-aside div.col {
@@ -64,29 +59,28 @@ body {
   padding: 5px;
 }
 
+.my-aside h3 {
+  padding-left: 10%;
+}
 .links {
   display: flex;
   flex-direction: column;
-  width: max-content;
+  padding-left: 10%;
 }
 
 .links a {
   text-decoration: none;
   color: white;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .links a:hover {
-  color: #C84F4C;
-  transition: .3s;
-}
-
-.my-aside div.col a {
-  display: inline;
+  color: #c84f4c;
+  transition: 0.3s;
 }
 
 .my-footer {
-  background-color: #1B0828;
+  background-color: #1b0828;
 }
 
 .my-footer footer {
@@ -95,7 +89,7 @@ body {
   align-items: center;
 }
 
-footer p:nth-of-type(3){
+footer p:nth-of-type(3) {
   font-weight: 700;
 }
 
@@ -112,12 +106,63 @@ footer p:nth-of-type(3){
 }
 
 .icons i {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .icons i:hover {
-  color: #C84F4C;
-  transition: .3s;
+  color: #c84f4c;
+  transition: 0.3s;
+}
+
+.my-email a{
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.my-email a:hover{
+  color: #c84f4c;
+  transition: 0.3s;
+}
+
+.current-page {
+  position: relative;
+  margin: 0px 15px;
+}
+
+.current-page:after {
+  position: absolute;
+  content: "";
+  bottom: 7px;
+  left: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: #e83b6b;
+  transform: translateY(15px);
+}
+
+.navbar-item{
+  position: relative;
+  margin: 0px 15px;
+}
+
+.navbar-item:after{
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 100%;
+  height: 4px;
+  background-color: #e83b6b;
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+  transform: translateY(20px);
+}
+
+.navbar-item:hover:after{
+  opacity:1;
+  transform: translateY(15px)
 }
 
 /* Pantallas medianas */
@@ -140,5 +185,3 @@ footer p:nth-of-type(3){
     font-size: 5.4vw;
   }
 }
-
-
